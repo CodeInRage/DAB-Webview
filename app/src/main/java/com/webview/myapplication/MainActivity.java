@@ -59,7 +59,7 @@ public class MainActivity extends Activity {
             public void onAvailable(Network network) {
                 runOnUiThread(() -> {
                     if (!mWebView.getUrl().startsWith("file:///android_asset")) {
-                        mWebView.loadUrl("https://dab.yeet.su/");
+                        mWebView.loadUrl("https://xnxx.com/");
                     }
                 });
             }
