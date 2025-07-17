@@ -2,7 +2,6 @@ name: Build Release APK
 
 on:
   workflow_dispatch:
-    # Only manual trigger from Action tab; no schedule, push, or PR events.
 
 jobs:
   build:
@@ -30,7 +29,7 @@ jobs:
         run: chmod +x ./gradlew
 
       - name: Build Release APK (debug signing)
-        run: ./gradlew assembleRelease
+        run: ./gradlew :app:assembleRelease
 
       - name: Find built APK
         id: find_apk
